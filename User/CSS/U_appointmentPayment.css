@@ -1,0 +1,234 @@
+.bkMid{
+    max-width: var(--maxWidth1280);
+margin: 20px auto;
+line-height: 1.5;
+}
+
+.col-50{
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 60px auto;
+}
+
+.formtop{
+    display: flex;
+    justify-content: space-evenly;
+/* height: 540px; */
+flex-flow: column nowrap;
+}
+
+.urDetails, .pyDetails{
+    display: flex;
+    flex-flow: column wrap;
+    width: fit-content;
+    gap: 20px 0px;
+    padding: 0px 20px;
+}
+
+.personalPayment{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pyDetails h4{
+    padding: 20px 60px;
+background-color: var(--BGColor);
+border: 2px solid var(--appointColor);
+}
+
+.pyDetails{width: fit-content;}
+.urDetails h1{text-align: center;}
+.urDetails ul{padding: 0px 20px;}
+
+.combineBox{
+    display: flex;
+flex-flow: column;
+gap: 60px;
+}
+
+.SummaryTop{
+    display: flex;
+justify-content: space-evenly;
+width: 100%;
+}
+
+.usePoints label{
+    /* margin: 0px 10px; */
+background-color: var(--BGColor);
+padding: 5px 20px;
+border-radius: 40px;
+border: 2px solid var(--appointColor);
+width: 100%;
+cursor: pointer;
+}
+
+.checkboxes label{
+    /* margin: 0px 10px; */
+background-color: var(--appointColor);
+padding: 5px 20px;
+border-radius: 40px;
+}
+
+
+
+.usePoints label input[type=radio]{
+    scale: 1.2;
+margin-right: 10px;
+}
+
+.usePoints{
+    display: flex;
+flex-direction: column;
+gap: 5px 0px;
+}
+
+.card{
+    display: flex;
+    align-items: baseline;
+    gap: 0px 10px;
+}
+
+.pay_img{width: 25px;}
+
+.detail_sec{display: inherit;
+    flex-flow: column wrap;
+    justify-content: space-evenly;}
+
+.paymentDetails{
+    border: 1px solid var(--loginColor);
+    border-radius: 40px;
+    padding: 25px 40px;
+}
+
+.paymentDetails{
+    display: flex;
+    /* align-items: center; */
+    flex-flow: row wrap;
+    /* width: 100%;
+    gap: 20px 0px; */
+}
+
+.paymentDetails_inner{
+    display: inherit;
+    flex-flow: column wrap;
+    gap: 20px 0px;
+    width: 50%;
+}
+
+.paymentDetails_inner h2{width: fit-content;}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.card {
+margin-bottom: 20px;
+}
+
+.btn {
+background-color: var(--appointColor);
+color: white;
+padding: 30px 0px;
+font-weight: 600;
+width: 100%;
+border-radius: 40px;
+cursor: pointer;
+font-size: 17px;
+}
+
+.btn:hover {
+background-color: var(--loginColor);
+}
+
+.bkMid_title h4, .bkMid_title h5{
+    text-align: center;
+}
+
+.bkMid_title ul{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px 20px;
+    gap: 10px 0px;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+ul li{
+    padding: 0px 10px;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+resize: none;
+border: 1px solid var(--appointColor);
+padding: 5px 10px;
+margin-top: 5px;
+}
+
+.membershipDetails{
+    display: flex;
+flex-flow: column nowrap;
+gap: 10px 0px;
+padding: 0px 20px;
+align-items: center;
+}
+
+.price{
+    margin-top: 10px;
+}
+
+.valid ul li{
+    list-style-type: none;
+    background-color: var(--appointColor);
+    width: fit-content;
+    padding: 10px 40px;
+    font-weight: 600;
+    border-radius: 40px;
+    font-size: 14px;
+}
+
+.valid ul li label{
+    color: var(--White);
+    cursor: pointer;
+    padding: 20px;
+}
+
+.valid ul li label input[type=checkbox]{
+    margin-right: 10px;
+transform: scale(1.5);
+}
+
+#hygieneResult, #examinationResult{
+text-align: center;
+}
+
+#c_points{
+    width: 40%;
+padding: 10px 15px;
+margin-left: 20px;
+}
+
+.valid .points_UL li{
+    background-color: var(--White);
+    padding: 8px;
+    margin: 5px 0px;
+}
+.valid .points_UL li label{
+    color: black;
+cursor: auto;
+padding: 10px 20px;
+margin: 20px;
+}
+
+#pointsUL li{
+    list-style-type: disc;
+}

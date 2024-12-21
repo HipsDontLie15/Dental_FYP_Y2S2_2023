@@ -1,0 +1,143 @@
+@import '../css/rootCSS.css';
+
+/*Overall*/
+footer{
+    background-color: var(--footerBGColor);
+    font-family: var(--fontFamMons);
+    font-size: var(--fontSize-12);
+    color: var(--White);
+    text-align: left;
+    padding:40px 20px;
+}
+
+.container{
+    max-width: var(--maxWidth1280);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyr_Box{
+    display: flex;
+    flex-flow: column wrap;
+    font-size: var(--fontSize-12);
+}
+
+.box{
+    display: flex;
+    /* margin-left: auto; */
+    width: 700px;
+justify-content: space-between;
+}
+
+.col_1, .col_2, .col_4{
+    width: fit-content;
+}
+
+
+.h4{
+    color: var(--White);
+margin-bottom: 25px;
+}
+
+.col_1_oin{
+    display: flex;
+}
+
+.col_1_in{
+    margin-right: 40px;
+}
+
+/*Directories UL*/
+.col_1 ul{
+    list-style-type: none;
+    line-height: 1.4rem;
+}
+
+.col_1 ul li{
+    margin-bottom: 16px;
+    width: max-content;
+}
+
+.col_1:nth-child(3) ul li{
+    margin-bottom: 24px;
+}
+
+.col_2 div, .col_3 div{
+    line-height: 1.6rem;
+    margin-right: 40px;
+    color: var(--White);
+}
+
+
+/*effect*/
+.col_1 ul li a, .col_3 div a{
+    color: var(--White);
+    transition: var(--hoverTransition);
+    -webkit-transition: var(--hoverTransition);
+    -moz-transition: var(--hoverTransition);
+    -ms-transition: var(--hoverTransition);
+    -o-transition: var(--hoverTransition);
+}
+
+.col_1 ul li a:hover, .col_3 div a:hover{
+    color:#F8D496;
+}
+
+
+
+/*Social Media*/
+.col_4 img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.col_4 .post-wrap img {
+    width: 40px;
+height: 40px;
+outline: 2px solid white;
+border-radius: 10px;
+}
+
+.col_4 .post-wrap div{
+    width:  auto;                    
+    height: auto;
+}
+
+.col_4:nth-child(3) > div {
+    display:flex;
+}
+
+
+.col_4:nth-child(3) > div img{
+    margin-right:1rem;
+}
+
+
+/*CopyRight && FCUC logo*/
+.copyr_Box {
+    display: flex;
+    align-items: flex-start;
+    font-size: var(--fontSize-12);
+    flex-flow: column wrap;
+}
+
+.copyr_Box p{
+    font-size: 10px;
+margin-top: 15%;
+color: var(--White);
+}
+
+.fcuc_Box img {
+    width: auto;
+    height: 60px;
+}
+
+.fcuc_Box{
+    width: inherit;
+display: flex;
+flex-flow: column nowrap;
+justify-content: space-between;
+}
+

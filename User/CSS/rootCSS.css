@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+:root{
+    --footerBGColor: #359FCD;
+    --BGColor: #D9F6FF;
+    --loginColor: #4AC8F4;
+    --appointColor: #4A84F4;
+    --White: #ffffff;
+    --Black: #000000;
+    --Gray: #333;
+    --LightGreen: #6BC074;
+    --fontFamMons: 'Montserrat', sans-serif;
+    --fontSize-12: 12px;
+    --fontSize-14: 14px;
+    --fontSize-16: 16px;
+    --hoverTransition: all .3s ease;
+    --border-hover:.1rem solid var(--Black);
+    --box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    --maxWidthNormal: 1400px;
+    --maxWidth1280: 1280px;
+    --zIndex: -1;
+}
+
+*,*::before,*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    font-family: var(--fontFamMons);
+    clear: both;
+    float: none;
+    transition: transform 80ms ease-in;
+    color: var(--Black);
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+    
+}

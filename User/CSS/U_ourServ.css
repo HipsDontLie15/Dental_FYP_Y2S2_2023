@@ -1,0 +1,101 @@
+.home_categories, .SerBoxDiv{
+    max-width: var(--maxWidth1280);
+margin: 20px auto;
+width: 100%;
+height: auto;
+display: flex;
+flex-flow: row wrap;
+gap: 20px 20px;
+}
+
+.allSerBox{background-color: var(--BGColor);}
+
+
+.SerBoxDiv{
+    margin: 60px auto 100px auto;
+    justify-content: space-evenly;
+    padding: 80px 0px;
+    gap: 60px 0px;
+}
+
+.serTopTitle{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0px auto;
+    line-height: 1.8;
+    justify-content: space-between;
+}
+
+.serTitleText{
+    width: 58%;
+}
+
+.eachDocBox{
+    display: flex;
+    align-items: flex-start;
+    margin: 10px auto;
+    width: 50%;
+    flex-grow: 1;
+}
+
+.secImageBox{
+    width: 500px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.secImageBox img{
+    width: inherit;
+}
+
+.ser_title{font-size: 32px;}
+
+.ser_Box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 20px 0px;
+}
+
+.eachSerBox{
+    display: flex;
+align-items: center;
+line-height: 1.5;
+width: 45%;
+padding: 25px;
+column-gap: 20px;
+border: 2px solid var(--footerBGColor);
+border-radius: 20px;
+background-color: var(--White);
+}
+
+.serImageBox{
+    width: 80px;
+}
+
+.serImageBox img{
+    width: inherit;
+}
+
+.serTextBox{
+    display: flex;
+flex-flow: column nowrap;
+}
+
+.serName{
+    font-weight: 600;
+}
+
+.serDP{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+    font-size: 12px;
+    width: 50%;
+}
+
+.serDes{
+    margin-top: 10px;
+    font-size: 14px;
+}

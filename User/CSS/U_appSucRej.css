@@ -1,0 +1,68 @@
+.outer_bkBox{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: var(--maxWidth1280);
+margin: 60px auto;
+}
+
+.bannerbkBox_Bg{width: 500px;}
+.bannerbkBox_Bg img{width: inherit;}
+.bkInfo{font-size: 14px;}
+
+.inner_bkBox{
+    line-height: 1.5;
+    display: flex;
+gap: 10px 0px;
+flex-direction: column;
+width: 54%;
+}
+
+.time{
+    display: flex;
+flex-direction: row;
+align-items: baseline;
+gap: 0px 20px;
+}
+
+.jsCount{
+    display: flex;
+align-items: baseline;
+}
+
+.sec{font-size: 12px;}
+
+#countdown {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.txt_1{margin-top: 40px;}
+.txt_2{margin-top: 20px;}
+
+.btnEachBox{
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.btnBox{
+    width: fit-content;
+    padding: 10px 80px;
+    color: var(--White);
+    background-color: var(--loginColor);
+    font-weight: 600;
+    border-radius: 40px;
+    font-size: 14px;
+}
+
+.btnBox:hover{
+    transition: all 0.65s ease;
+    background-color: var(--White);
+    color: var(--appointColor);
+    box-shadow: inset 0px 0px 0px 4px var(--appointColor);
+}
+
+#countdownPP{
+    font-size: 24px;
+    font-weight: 600;
+}

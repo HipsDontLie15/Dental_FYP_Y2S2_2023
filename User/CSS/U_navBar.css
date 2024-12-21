@@ -1,0 +1,214 @@
+@import '../css/rootCSS.css';
+
+/*Overall*/
+header{
+    text-transform: capitalize;
+    transition:all .2s linear;
+    padding: 20px 0px;
+    background-color: var(--White);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .container{
+    max-width: 1280px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  
+  
+  .header-1 {
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    justify-content: space-between;
+    text-transform: none;
+    text-align: center;
+  }
+  
+  
+  .header-1 img {
+    width: auto;
+    height: 50px;
+    /* margin-right: 10px; */
+  }
+  
+  .header-2{
+    /* width: auto; */
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .navbar, .navbar-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .navbar a{
+    color: var(--Black);
+    margin-left: 30px;
+    position: relative;
+    padding: 8px 5px;
+    transition: color 0.45s ease;
+  }
+
+  .navbar-2{
+    gap: 0px 20px;
+  }
+
+  .navbar-2 a{
+    color: var(--Black);
+    /* margin-left: 20px; */
+  }
+
+  .navbar a, .navbar-2 button{
+    font-family: var(--fontFamMons);
+    font-size: var(--fontSize-14);
+    font-weight: 600;
+  }
+
+  .navbar a::after {
+    content: ''; /* Required for pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust the distance of the underline from the text */
+    width: 100%;
+    height: 2px;
+    background-color: var(--Black); /* Set underline color */
+    transform: scaleX(0); /* Start with no width, hide the underline */
+    transform-origin: left;
+    transition: transform 0.85s ease, background-color 0.5s ease, color 0.5s ease;
+
+  }
+  
+  .navbar a:hover{
+    color: var(--footerBGColor);
+  }
+
+  /* Hover underline effect */
+  .navbar a:hover::after {
+    transform: scaleX(1); /* Show the underline on hover */
+    background-color: var(--footerBGColor);
+  }
+  
+  .button1, .button2{
+    text-align: center;
+    padding: 10px 32px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 20px;
+  }
+  
+  .button1 {
+    background-color: var(--White);
+    color: var(--loginColor);
+    
+outline: 3px solid var(--loginColor);
+  }
+  
+  .button2 {
+    background-color: var(--appointColor);
+    border: 2px solid var(--appointColor);
+    color: var(--White);
+  }
+  
+  .profile {
+    /* margin: 0px 20px; */
+    display: flex;
+align-items: center;
+flex-flow: column nowrap;
+  }
+
+/* Logged */
+.dropbtn {
+  background-color: var(--loginColor);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 0px 5px;
+  z-index: 2;
+position: relative;
+}
+
+#userP:hover{
+  transition: all 0.65s ease;
+  background-color: var(--White);
+  box-shadow: inset 0px 0px 0px 2px var(--appointColor);
+  }
+
+#userP:hover .c_name{
+  color: var(--appointColor);
+}
+
+#userP:focus{
+  box-shadow: var(--box-shadow);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  top: 45px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+}
+
+.dropdown-content a {
+  transition: all 0.3s ease;
+  color: var(--Black);
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--BGColor);
+  color: var(--appointColor);
+}
+
+#db{
+  padding-top: 40px;
+}
+
+
+
+.show {display: block;}
+
+.dropbtn img,
+.dropbtn .c_name {
+  pointer-events: none;
+}
+
+.c_name{
+  word-wrap: anywhere;
+  width: auto;
+  color: var(--White);
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.uicon{
+  width: 30px;
+margin-right: 5px;
+height: 30px;
+}
+

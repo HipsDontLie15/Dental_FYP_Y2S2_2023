@@ -1,0 +1,68 @@
+@import '../../User/CSS/rootCSS.css';
+
+.header{background-color: var(--BGColor);}
+
+.Qcontainer{
+    max-width: var(--maxWidth1280);
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0px;
+}
+
+.header-1{
+    display: flex;
+    align-items: center;
+    gap: 0px 20px;
+    width: 100%;
+}
+
+.imageLink{width: 160px;}
+
+.logo{
+    width: inherit;
+}
+
+.navTitle, .txtBox{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px 0px;
+    font-weight: 600;
+}
+
+.navTitle p{font-size: 28px;}
+.navTitle div{font-size: 12px;}
+.txtBox{width: fit-content;}
+
+.header-2{
+    display: flex;
+align-items: center;
+gap: 0px 20px;
+justify-content: flex-end;
+width: 100%;
+gap: 0px 20px;
+}
+
+.picadmin{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--White);
+    gap: 0px 15px;
+    padding-right: 30px;
+    border-radius: 20px;
+overflow: auto;
+}
+
+.avatar{width: 50px;}
+.editP{width: 101%;}
+.lgout{width: fit-content;}
+
+.linking{
+    padding: 15px 20px;
+background-color: var(--appointColor);
+border-radius: 20px;
+color: var(--White);
+transition: all 0.3s ease;
+}

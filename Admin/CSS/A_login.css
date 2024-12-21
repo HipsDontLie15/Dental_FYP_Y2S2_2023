@@ -1,0 +1,76 @@
+@import '../../User/CSS/rootCSS.css';
+
+body{background-color: var(--BGColor);}
+
+.border-container{
+    max-width: var(--maxWidth1280);
+    margin: 50px auto;
+    width: 40%;
+    box-shadow: inset 0px 0px 0px 4px var(--footerBGColor);
+    border-radius: 20px;
+    background-color: var(--White);
+}
+
+.form_right{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px 0px;
+    padding: 40px 20px;
+}
+
+.form_right-inner{
+    display: inherit;
+    flex-flow: inherit;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+margin: 10px;
+}
+
+.busy{
+    display: inherit;
+    flex-flow: inherit;
+    gap: 10px 0px;
+    align-items: center;
+}
+
+.applepie{
+    display: inherit;
+    flex-flow: column nowrap;
+    gap: 20px 10px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+label{
+    font-weight: 600;
+    width: 100%;
+}
+
+input{
+    border: 1px solid var(--appointColor);
+padding: 10px 15px;
+width: 100%;
+margin-top: 10px;
+}
+
+.btnSubmit{
+    width: 100%;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--appointColor);
+    color: var(--White);
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 0px 4px transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btnSubmit:hover{
+    color: black;
+    background-color: var(--BGColor);
+    box-shadow: inset 0px 0px 0px 10px var(--BGColor);
+}

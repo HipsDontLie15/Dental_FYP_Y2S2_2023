@@ -1,0 +1,125 @@
+section{
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: var(--maxWidth1280);
+    margin: 40px auto 60px auto;
+    gap: 0px 40px;
+}
+
+.bkTitle{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 40px 0px;
+    justify-content: center;
+    width: 100%;
+    line-height: 1.4;
+}
+
+.groupTitle h4{font-weight: 600;}
+
+.bkTitle_bg{
+    width: 800px;
+overflow: hidden;
+height: 250px;
+}
+
+.bkTitle_bg img{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+.bkBottom{
+    background-color: var(--BGColor);
+padding: 10px 0px;
+margin-bottom: 60px;
+}
+
+.BTM_ul{
+    list-style: none;
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    border-radius: 40px;
+    border: 5px solid var(--appointColor);
+    background-color: var(--White);
+}
+
+.BTM_li{
+    display: flex;
+flex-direction: column-reverse;
+position: relative;
+border-top: 2px solid var(--appointColor);
+margin: 5px 0px;
+overflow: hidden;
+border-radius: 40px;
+line-height: 1.5;
+height: fit-content;
+}
+
+.loc{
+    display: inherit;
+    flex-flow: row nowrap;
+position: relative;
+}
+
+.loc-img{
+    width: 50px;
+    height: 50px;
+}
+
+.loc a p{
+    width: 80%;
+}
+
+.loc a{
+    height: fit-content;
+    display: flex;
+gap: 0px 20px;
+}
+
+.show-map{
+    width: 100%;
+}
+
+.show-map.full-width {
+    width: 40%;
+}
+
+
+.pemail {
+    display: none;
+    overflow: auto;
+    position: absolute;
+    top: 40%;
+}
+
+.pemail, .show-map{
+    margin: 40px 0px 40px 40px;
+}
+
+.map-container{
+    border-left: 2px solid var(--appointColor);
+    display: none;
+    overflow: hidden;
+}
+
+
+.bkBTM{
+    margin-bottom: 80px;
+    display: flex;
+flex-flow: column nowrap;
+gap: 40px 0px;
+}
+
+.bkBTM_Title{
+    font-size: 28px;
+text-align: center;
+font-weight: 600;
+text-transform: capitalize;
+}
+
+.loc_box{
+    background-color: var(--BGColor);
+padding: 40px 0px;
+}

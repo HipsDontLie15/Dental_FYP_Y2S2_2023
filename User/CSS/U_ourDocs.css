@@ -1,0 +1,107 @@
+.home_categories{
+    max-width: var(--maxWidth1280);
+margin: 20px auto;
+width: 100%;
+height: auto;
+display: flex;
+flex-flow: row wrap;
+}
+
+.docTopTitle{
+    display: flex;
+flex-flow: column nowrap;
+align-items: center;
+margin: 20px auto 60px auto;
+line-height: 1.8;
+}
+
+.docTopTitle p{
+    font-weight: 600;
+}
+
+.eachDocBox{
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    flex-grow: 1;
+line-height: 1.4;
+padding: 20px;
+transition: all 0.3s ease;
+}
+
+.docImageBox{
+    width: 200px;
+    /* margin-right: 20px; */
+    text-align: center;
+}
+
+.docImageBox img{
+    width: inherit;
+}
+
+.docInfo{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0px 20px;
+align-items: center;
+justify-content: space-between;
+}
+
+.docDes p{
+    margin-left: 20px;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.aLinkEachDocBox:focus{
+color: var(--loginColor);
+background-color: var(--White);
+box-shadow: inset 0px 0px 0px 2px var(--loginColor);
+border-radius: 40px;
+animation: fadeIn 1s;
+transition: all 0.3s ease;
+}
+
+
+.aLinkEachDocBox:hover{
+box-shadow: inset 0px 0px 0px 2px var(--loginColor);
+border-radius: 40px;
+transition: all 0.3s ease;
+}
+
+
+.ReservaLayer{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 80px 0px 40px 0px;
+    line-height: 1.8;
+    background-color: var(--BGColor);
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.bookNOW_Box h1{
+    text-transform: capitalize;
+}
+
+.btnBox{
+    padding: 20px 200px;
+    background-color: var(--appointColor);
+    border-radius: 40px;
+    width: fit-content;
+    margin: 20px auto 0px auto;
+    color: var(--White);
+    font-weight: 600;
+}
+
+.btnBox:hover{
+    transition: all 0.65s ease;
+    background-color: var(--White);
+    color: var(--appointColor);
+    box-shadow: inset 0px 0px 0px 4px var(--appointColor);
+}

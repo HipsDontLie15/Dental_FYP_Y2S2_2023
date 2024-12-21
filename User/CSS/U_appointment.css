@@ -1,0 +1,204 @@
+.bkTop{
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: var(--maxWidth1280);
+    margin: 40px auto 20px auto;
+    gap: 0px 40px;
+}
+
+.bkTitle{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px 0px;
+    justify-content: center;
+    width: 100%;
+    line-height: 1.4;
+}
+
+.groupTitle h4{font-weight: 600;}
+
+.bkTitle_bg img{width: 100%;}
+
+.bkBottom{
+    background-color: var(--BGColor);
+padding: 10px 0px;
+margin-bottom: 60px;
+}
+
+.formBox{
+    margin: 40px auto;
+    max-width: 1280px;
+    padding: 20px 40px;
+    border: 2px solid var(--loginColor);
+    border-radius: 40px;
+    background-color: var(--White);
+}
+
+.formBox fieldset legend{
+    margin: 20px auto 60px auto;
+    font-size: 18px;
+}
+
+.formTitle{
+    text-align: center;
+margin: 40px auto 0px auto;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 150px;
+    background-color: e9e9ed;
+}
+
+.OptMessageBox{
+    display: flex;
+flex-flow: column nowrap;
+justify-content: flex-start;
+margin: 40px auto 0px auto;
+gap: 5px 0px;
+}
+
+.OptMessageBox label{
+    height: fit-content;
+font-size: 14px;
+}
+
+.OptMsgSmallNote{
+    font-size: 14px;
+}
+
+#depositBox{margin: 20px auto;}
+
+.Sub-row{
+    margin: 20px auto 60px auto;
+width: fit-content;
+}
+
+.Sub-row button{
+    padding: 20px 120px;
+    border-radius: 40px;
+    background-color: var(--appointColor);
+    color: var(--White);
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.appDetails{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 60px 0px;
+    line-height: 1.5;
+}
+
+/* .step1{
+    width: 100%;
+} */
+
+.OptMsgSmallNote{margin-bottom: 10px;}
+
+.pickOptions{
+    padding: 10px 20px;
+width: 100%;
+}
+
+#time-list{width: 65%;}
+
+.rb_docBox, .cb_serBox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+margin-top: 20px;
+}
+
+.rb_docBox label{
+width: fit-content;
+display: flex;
+align-items: center;
+height: 100%;
+transition: all 0.65s ease;
+}
+
+.rb_doc{
+    width: 30px;
+    height: 30px;
+}
+
+.doc_imgName{
+    display: flex;
+flex-flow: column nowrap;
+align-items: center;
+}
+
+.img_doc{
+    width: 120px;
+}
+
+.doc_imgName,.rb_serBox {
+    box-shadow: inset 0px 0px 0px 4px var(--BGColor);
+    padding: 30px 20px;
+    border-radius: 40px;
+transition: all 0.65s ease;
+}
+
+.doctorStation{
+    margin-top: 20px;
+font-weight: 600;
+}
+
+
+.doctorRole, .serType{
+    margin-top: 5px;
+font-weight: 600;
+}
+
+.img_ser{
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.rb_serBox, .doc_imgName{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 250px;
+    text-align: center;
+    height: 210px;
+}
+
+.doc_imgName{
+    height: 280px;
+}
+
+
+.radio-image, .radio-service{cursor: pointer;}
+
+.radio-image input[type="radio"], .radio-service input[type="checkbox"]{
+    display: none;
+}
+
+.radio-image input[type="radio"]:checked + .doc_imgName , .radio-service input[type="checkbox"]:checked + .rb_serBox{
+box-shadow: inset 0px 0px 0px 6px var(--loginColor);
+}
+
+select{
+    padding: 10px 20px;
+}
+
+#dates{
+    padding: 10px 20px;
+background-color: e9e9ed;
+}
+
+.dov, .tov{
+    display: flex;
+gap: 0px 20px;
+align-items: baseline;
+flex-flow: row wrap;
+}
+
+.tov{flex-flow: row nowrap;}
+.cb_depositBox{text-align: center;}

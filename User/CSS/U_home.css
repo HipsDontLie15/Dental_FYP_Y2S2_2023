@@ -1,0 +1,174 @@
+.home_categories, .whyQBox, .home_cat3{
+    max-width: var(--maxWidth1280);
+    margin: 0px auto;
+}
+
+.homeTopCont{
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+margin: 40px 0px;
+justify-content: space-between;
+}
+
+.txt_1{
+width: 60%;
+line-height: 1.6;
+display: flex;
+flex-flow: column nowrap;
+gap: 5px 0px;
+}
+
+.txt_1 p{
+    margin: 20px 0px 40px 0px;
+}
+
+.upText_title{
+    text-transform: capitalize;
+}
+
+.btnBox{
+padding: 20px 100px;
+width: fit-content;
+background-color: var(--appointColor);
+font-weight: 600;
+border-radius: 40px;
+color: var(--White);
+}
+
+
+
+.img_1{
+    width: 410px;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 400px;
+}
+
+.img_1 img{
+width: inherit;
+height: inherit;
+object-position: 40% 0%;
+object-fit: cover;
+}
+
+
+.home_cat2{
+    background-color: var(--BGColor);
+    padding: 40px 0px;
+}
+
+
+
+.whyQBox h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ulMainBox{
+    display: flex;
+list-style: none;
+justify-content: space-between;
+text-align: center;
+}
+
+.liBoxes{
+    padding: 20px;
+border-radius: 25px;
+background-color: var(--White);
+transition: all 0.3s ease;
+}
+
+.liBoxes:hover{
+transform: scale(1.1);
+box-shadow: inset 0px 0px 0px 2px var(--appointColor);
+}
+
+
+.ImageBox, .ImageBox img, .ulContentBox{
+    width: 250px;
+}
+
+.ImageBox{
+    margin-bottom: 10px;
+    border-radius: 7%;
+    overflow: hidden;
+    height: 230px;
+}
+
+.ImageBox img{
+    height: inherit;
+    object-position: 66%;
+    object-fit: cover;
+}
+
+.ulContentBox{
+    display: flex;
+flex-flow: column nowrap;
+gap: 10px 0px;
+}
+
+.ulContentBox h3{
+    text-align: center;
+}
+
+.ulContentBox p{
+    font-size: 14px;
+}
+
+.home_cat2, .homecat3_top, .homecat3_bottom{
+    margin-bottom: 40px;
+}
+
+.homecat3_top, .homecat3_bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px 60px;
+}
+
+.homecat3_bottom{
+    flex-flow: row-reverse nowrap;
+}
+
+.img_2{
+    width: fit-content;
+height: 400px;
+}
+
+.img_2 img{
+    width: 640px;
+height: inherit;
+}
+
+.btnEachBox{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0px 40px;
+}
+
+#cat3_btnTop, #cat3_btnBottom{
+    padding: 20px 50px;
+}
+
+#cat3_btnTop{
+    background-color: var(--loginColor);
+}
+
+.docBTN, .serBTN{
+    width: fit-content;
+}
+
+.btnBox:hover{
+transition: all 0.65s ease;
+background-color: var(--White);
+color: var(--appointColor);
+box-shadow: inset 0px 0px 0px 4px var(--appointColor);
+}
+
+#cat3_btnTop:hover{
+color: var(--loginColor);
+background-color: var(--White);
+box-shadow: inset 0px 0px 0px 4px var(--loginColor);
+}

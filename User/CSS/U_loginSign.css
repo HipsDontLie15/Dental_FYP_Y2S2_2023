@@ -1,0 +1,388 @@
+@import '../css/rootCSS.css';
+
+
+  .body {
+    display: flex;
+justify-content: center;
+    max-width: var(--maxWidth1280);
+margin: 60px auto;
+  }
+  
+  .form__title {
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+text-align: center;
+  }
+  
+  .link {
+    color: var(--Gray);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+  }
+
+#repeat_PWD{
+  margin-bottom: 20px;
+}
+
+#confirm_password{
+  margin-bottom: 5px;
+}
+
+#message{
+  color: red;
+}
+
+  .bContainer {
+    background-color: var(--White);
+    border-radius: 40px;
+      height: 720px;
+      max-width: var(--maxWidth1280);
+      overflow: hidden;
+      position: relative;
+      width: 70%;
+      border: 4px solid var(--loginColor);
+  }
+  
+  .bContainer__form {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+flex-direction: row;
+  }
+  
+  .bContainer--signin {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+  }
+  
+  .bContainer.right-panel-active .bContainer--signin {
+    transform: translateX(100%);
+  }
+  
+  .bContainer--signup {
+    left: 0;
+    opacity: 0;
+    width: 50%;
+    z-index: 1;
+  }
+  
+  .bContainer.right-panel-active .bContainer--signup {
+    animation: show 0.6s;
+    opacity: 1;
+    transform: translateX(100%);
+    z-index: 5;
+  }
+  
+  .bContainer__overlay {
+    height: 100%;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: transform 0.6s ease-in-out;
+    width: 50%;
+    z-index: 100;
+  }
+  
+  .bContainer.right-panel-active .bContainer__overlay {
+    transform: translateX(-100%);
+  }
+  
+  .overlay {
+    background-color: var(--appointColor);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.30), rgba(38, 38, 38, 0.70)), url(../Images/login_signUp.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    left: -100%;
+    position: relative;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+    width: 200%;
+    
+  }
+  
+  .bContainer.right-panel-active .overlay {
+    transform: translateX(50%);
+  }
+  
+  .overlay__panel {
+    display: flex;
+flex-direction: column;
+height: 30%;
+justify-content: space-evenly;
+position: absolute;
+bottom: -100px;
+top: 0;
+width: 50%;
+padding: 25px 0px;
+margin: auto 30px;
+  }
+  
+  .overlay--left {
+    transform: translateX(-20%);
+    left: 0;
+    align-items: flex-start;
+  }
+
+
+  .o_text{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+  }
+  
+  .bContainer.right-panel-active .overlay--left {
+    transform: translateX(0);
+  }
+  
+  .overlay--right {
+    /* transform: translateX(-20%); */
+    align-items: flex-end;
+    right: 0;
+    transform: translateX(0);
+    text-align: end;
+
+  }
+  
+  .bContainer.right-panel-active .overlay--right {
+    transform: translateX(20%);
+  }
+
+
+.form label{
+    font-weight: 600;
+font-size: 14px;
+}
+
+
+.S_btns{
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  align-items: center;
+}
+
+  
+.btn, .cancelbtn, .signupbtn {
+  background-color: var(--appointColor);
+  border: 1px solid var(--appointColor);
+  color: var(--White);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 0.9rem 4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+  
+#signIn, #signUp{
+  width: 50%;
+  height: 60px;
+  background-color: white;
+  color: var(--appointColor);
+  font-size: 16px;
+  border: 3px solid var(--appointColor);
+}
+
+#logBTN{
+  height: 80px;
+}
+
+.form > .btn {
+  margin-top: 1.5rem;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.signupbtn{
+  height: 70px;
+  margin: 10px 0px;
+  width: 100%;
+}
+
+
+.cancelbtn{
+  margin: 10px 0px;
+  background-color: white;
+  color: var(--appointColor);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+#logBTN:hover, .signupbtn:hover, .cancelbtn:hover{
+border-radius: 40px;
+}
+
+
+#signIn:hover, #signUp:hover{
+  border-radius: 40px;
+  color: var(--White);
+  background-color: var(--appointColor);
+  width: 70%;
+}
+
+  
+.form {
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+  height: 100%;
+  width: 600px;
+  justify-content: center;
+}
+
+
+.input {
+  background-color: #fff;
+  padding: 12px 10px;
+  margin: 10px 0px 25px 0px;
+width: 100%;
+border: 1px solid black;
+}
+
+
+
+#inName{
+  margin-bottom: 25px;
+}
+
+#lblName span{
+  font-size: 12px;
+font-weight: normal;
+}
+
+.adLog{
+  position: absolute;
+bottom: 0;
+margin-bottom: 40px;
+font-size: 14px;
+}
+
+#password{
+  margin-bottom: 10px;
+}
+
+.lbltPW{margin-bottom: 20px;}
+
+.togglePW{
+  margin-right: 10px;
+}
+
+
+/* manage spacing of each input */
+.S_email, .S_pwd, .S_phone, .S_dob{
+  margin-bottom: 25px;
+}
+
+#c_email, #pwd, #phoneInput{
+  margin-bottom: 5px;
+}
+
+
+/* Radio Button */
+.radGender_Box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0px 40px 0px;
+padding-right: 30px;
+}
+
+.radGender{
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+#radMale{
+  width: 22%;
+}
+
+
+/* dob & phone */
+.S_dob, .S_phone{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+flex-flow: row wrap;
+}
+
+#DOB, #phoneInput{
+  border: 1px solid;
+padding: 5px 10px;
+width: 60%;
+}
+
+#phoneError{
+  width: 100%;
+}
+
+
+/* Requirements */
+/* The message box is shown when the user clicks on the password field */
+#requirement, #phoneError{
+  display: none;
+}
+
+#pwd:focus ~ #requirement, #phoneInput:focus ~ #phoneError{
+  display: block;
+}
+
+#requirement, #emailError, #phoneError, #dobError{
+  font-weight: normal;
+margin: 5px 0px 25px 0px;
+background-color: aliceblue;
+border: 1px solid var(--appointColor);
+padding: 10px;
+}
+
+#requirement p, #emailError, #phoneError, #dobError{
+  padding: 8px 50px;
+}
+
+#emailError, #phoneError, #requirement, #dobError{
+  margin-bottom: 5px;
+}
+
+#requirement , #requirement p, #emailError, #phoneError, #dobError{
+  font-size: var(--fontSize-12);
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid, #emailError.form__ok, #phoneError.form__ok, #dobError.form__ok{
+  color: green;
+}
+
+.valid:before , #emailError.form__ok:before , #phoneError.form__ok:before, #dobError.form__ok:before{
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid, .form__error, #phoneError.form__error, #dobError.form__error{
+  color: red;
+}
+
+.invalid:before , .form__error:before, #phoneError.form__error:before, #dobError.form__error:before{
+  position: relative;
+  left: -35px;
+  content: "✖";
+}

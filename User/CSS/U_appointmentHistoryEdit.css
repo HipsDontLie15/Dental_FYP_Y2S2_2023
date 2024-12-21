@@ -1,0 +1,145 @@
+.backSearch{
+    display: flex;
+align-items: baseline;
+justify-content: space-between;
+}
+
+.al{
+    border: 2px solid var(--appointColor);
+width: fit-content;
+padding: 10px 40px;
+font-size: 14px;
+padding-right: 20px;
+border-radius: 40px;
+}
+
+.fas{
+    position: relative;
+left: -10px;
+transition: all 0.3s ease;
+}
+
+.al:hover .fas{
+    left: -20px;
+}
+
+.border-container{
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: var(--maxWidth1280);
+    margin: 40px auto 80px auto;
+    gap: 0px 40px;
+}
+
+.apppple{
+    width: 50%;
+    margin: 0px auto;
+    line-height: 1.5;
+    padding: 20px 50px;
+    border-radius: 30px;
+border: 2px solid var(--appointColor);
+}
+
+.apppple legend{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btnEdit{
+    text-align: center;
+    font-weight: 600;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: var(--footerBGColor);
+    font-weight: 600;
+    color: var(--White);
+    font-size: 16px;
+}
+
+.btnEdit:hover{
+    background-color: var(--appointColor);
+}
+
+.des{
+    resize: none;
+    width: 100%;
+    border: 1px solid var(--appointColor);
+    padding: 5px;
+}
+
+.Description{
+    display: flex;
+    gap: 5px;
+    flex-flow: column nowrap;
+}
+
+.admin-details{
+    list-style-type: none;
+}
+
+.admin-details li label{
+    display: flex;
+    gap: 5px 20px;
+    flex-flow: column nowrap;
+    margin: 20px 0px;
+}
+
+#doctorSelect, #dates, #time-list{
+    border: 1px solid var(--appointColor);
+    padding: 5px 20px;
+}
+
+#apploc{
+    display: flex;
+flex-flow: row nowrap;
+}
+
+#locationSelect{
+    font-size: 16px;
+font-weight: 600;
+}
+
+select, #dates{font-size: 16px;}
+
+#serviceTypeCheckbox{
+    display: flex;
+    gap: 10px 8px;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+#serviceTypeCheckbox label{
+    display: flex;
+flex-flow: row nowrap;
+align-items: center;
+cursor: pointer;
+gap: 10px;
+margin: 0px;
+padding: 5px 10px;
+border-radius: 40px;
+border: 1px solid var(--appointColor);
+}
+
+#dentalCare{margin-bottom: 5px;}
+
+.informationDoc{
+margin: 40px auto;
+}
+
+.infoP{
+    display: flex;
+justify-content: space-evenly;
+margin: 10px 0px;
+}
+
+table, td, th {
+    border: 1px solid var(--loginColor);
+padding: 10px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+}

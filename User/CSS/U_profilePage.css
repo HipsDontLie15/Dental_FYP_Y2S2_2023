@@ -1,0 +1,137 @@
+ 
+/* Requirements */
+/* The message box is shown when the user clicks on the password field */
+#requirement, #phoneError{
+  display: none;
+}
+
+#pwd:focus ~ #requirement, #phoneInput:focus ~ #phoneError{
+  display: block;
+}
+
+#requirement, #emailError, #phoneError, #dobError{
+    font-weight: normal;
+  margin: 5px 0px 25px 0px;
+  background-color: aliceblue;
+  border: 1px solid var(--appointColor);
+  padding: 10px;
+}
+
+#requirement p, #emailError, #phoneError, #dobError{
+  padding: 8px 50px;
+}
+
+#emailError, #phoneError, #requirement, #dobError{
+  margin-bottom: 5px;
+}
+
+#requirement , #requirement p, #emailError, #phoneError, #dobError{
+  font-size: var(--fontSize-12);
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid, #emailError.form__ok, #phoneError.form__ok, #dobError.form__ok{
+  color: green;
+}
+
+.valid:before , #emailError.form__ok:before , #phoneError.form__ok:before, #dobError.form__ok:before{
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid, .form__error, #phoneError.form__error, #dobError.form__error{
+  color: red;
+}
+
+.invalid:before , .form__error:before, #phoneError.form__error:before, #dobError.form__error:before{
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+
+.overall-box{
+  max-width: var(--maxWidth1280);
+margin: 40px auto;
+display: flex;
+justify-content: space-evenly;
+}
+
+.border-container{
+  background-color: var(--White);
+border: 2px solid var(--appointColor);
+padding: 40px 60px;
+border-radius: 40px;
+}
+
+.imgbox, .imgbox label{
+  display: flex;
+flex-flow: row nowrap;
+align-items: center;
+gap: 5px 20px;
+}
+
+.imgbox label{flex-flow: column nowrap;}
+
+.fullName{
+  display: flex;
+flex-flow: column nowrap;
+gap: 20px;
+}
+
+.radGender_Box{
+  display: flex;
+gap: 0px 40px;
+}
+
+.radGender input[type='radio']{
+  scale: 1.2;
+  margin-right: 5px;
+}
+
+.left-section{margin-bottom: 40px;}
+
+.uKnow{
+  display: flex;
+flex-direction: column;
+gap: 20px 0px;
+}
+
+input[type='text'], input[type='password'], input[type='date'], input[type='tel'], input[type='file']{
+  background-color: e9e9ed;
+  border: 1px solid var(--appointColor);
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.S_btns{
+  display: flex;
+justify-content: space-evenly;
+margin-top: 40px;
+}
+
+input[type='submit'], input[type='reset']{
+  padding: 20px 60px;
+background-color: var(--BGColor);
+border-radius: 40px;
+font-weight: 600;
+cursor: pointer;
+}
+
+input[type='reset']{
+  box-shadow: inset 0px 0px 0px 4px var(--appointColor);
+}
+
+input[type='submit']{
+  background-color: var(--appointColor);
+  color: var(--White);
+}
+
+input[type='checkbox']{margin: 0px 10px;}
+
+.lbltPW{
+  cursor: pointer;
+  margin-left: 20px;
+}
