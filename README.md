@@ -1,32 +1,45 @@
-Final Year Project - Diploma (Purely Rushed)
+## 📒 Description
 
-Welcome to my final year project for my diploma. This project was created under a time crunch and serves as a demonstration of the skills I have developed during my studies. Although it's a rushed effort, it showcases my ability to work with various technologies.
+***Final Year Project - Diploma***
 
-----------------------------------------------------------------------------------------
-🚀 Technologies Used
+This project involves redesigning and integrating an appointment system for a local dental clinic’s website. The new features include:
 
-    PHP: For server-side scripting and backend logic
-    HTML: For the structure and layout of the webpage
-    CSS: For styling and enhancing the visual appeal of the site
-    JavaScript: For client-side interactivity
-    SQL (via phpMyAdmin): For managing databases and server-side data handling
-
-----------------------------------------------------------------------------------------
-  📁 Project Structure
-
-Here's a quick overview of how the project is organized:
-
-    index.php: Main entry point for the application
-    style.css: Custom styles for the user interface
-    script.js: JavaScript for dynamic page features
-    database.sql: SQL file for database setup (phpMyAdmin)
+- Appointment System: Users can book appointments, with records visible in both user and admin dashboards.
+- Loyalty Points: Users earn points for each visit, with discounts on dental services (future development).
+- Dynamic Content: Admins can manage and update doctor and service information.
+- Login/Signup: Users can easily create accounts or log in.
+- Dashboards: Users and admins have personalized dashboards to manage their details and appointments.
 
 ----------------------------------------------------------------------------------------
-⚙️ Setup Instructions
+## 🚀 Technologies Used
+
+    - PHP: Server-side scripting & backend logic
+    - HTML: Webpage structure
+    - CSS: Styling & design
+    - JavaScript: Client-side interactivity
+    - SQL (via phpMyAdmin): Database management & data handling
+
+----------------------------------------------------------------------------------------
+## 📷 Screenshots
+
+***Login***
+
+![image](https://github.com/user-attachments/assets/ea8591a8-a3e6-462a-bf5d-7d9de8af5f93)
+
+***Appointment Form***
+
+![image](https://github.com/user-attachments/assets/bb9dc023-699e-4f6c-b9ef-f5ffcd168ca8)
+
+***User Dashboard***
+
+![image](https://github.com/user-attachments/assets/f419f3c0-9593-49ba-980e-0b94910de2ec)
+
+----------------------------------------------------------------------------------------
+## ⚙️ Setup Instructions
 
 Clone the repository:
 
-    git clone https://github.com/yourusername/yourprojectname.git
+    git clone https://github.com/HipsDontLie15/Dental_FYP_Y2S2_2023.git
 
 Set up the database:
 
@@ -35,9 +48,3 @@ Set up the database:
 Run the application:
 
     You can run the project on a local server such as XAMPP or WAMP.
-
-----------------------------------------------------------------------------------------
-📌 Notes
-
-    This project was done under tight deadlines, so while it meets the basic requirements, there may be room for improvement.
-    Feel free to contribute or make suggestions for better functionality or design.
